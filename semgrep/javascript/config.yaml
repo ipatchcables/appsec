@@ -1,0 +1,13 @@
+rules:
+  - id: pull-routes
+    languages:
+      - javascript
+    message: |
+      Print routes.
+    patterns:
+      - pattern-either:
+          - pattern: |
+              $V = require('=~//route.*/')
+          - pattern: |
+              $V = require('d')
+    severity: INFO
