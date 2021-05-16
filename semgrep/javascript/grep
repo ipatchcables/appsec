@@ -1,1 +1,5 @@
 grep -inr -e 'app.use(.*)'  --include=*.js 
+egrep -inr -e 'app.get(''.*)'  --include=*.js
+
+grep -inr -e 'app.get(.*)'  --include=*.js  
+egrep -inr -e 'app.get(''.*)'  --include=*.js
